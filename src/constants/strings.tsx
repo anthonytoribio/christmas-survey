@@ -12,11 +12,16 @@ export const LanguageManager = {
         es: "Ingrese su nombre y la inicial de su apellido (ex. Robert T.)"
     },
     LanguageButton: {
-        en: "Espanol",
+        en: "Español",
         es: "English"
     },
     NextButton: {
         en: "Next",
-        es: "Proximo"
-    }
+        es: "Próximo"
+    },
+    BackButton: {
+        en: "Back",
+        es: "Regreso"
+    },
+
 };

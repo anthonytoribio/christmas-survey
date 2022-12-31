@@ -12,10 +12,10 @@ const NameInput = () => {
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => dispatch(nameEntered(e.target.value));
 
     return (
-        <div className="Base">
-            <div className="Question">{isEnglish ? nameQDescription.en : nameQDescription.es}<span className="Asterik"> *</span></div>
-            <div className="Input">
-                <input type="text" id="nameID" className="Name-text" required onChange={handleInputChange}></input>
+        <div className="Name-div">
+            <div className="NameQuestion-div">{isEnglish ? nameQDescription.en : nameQDescription.es}<span className="Asterik"> *</span></div>
+            <div className="InputName-div">
+                <input type="text" className="Name-text" required onChange={handleInputChange}></input>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
-.Base {
+.Name-div {
     background-color: #292929;
-    margin: 5px;
+    margin-top: 5px;
     color: #FFFFFF;
     min-width: calc(100vh/9);;
     display: flex;
@@ -8,12 +8,12 @@
     
 }
 
-.Question {
+.NameQuestion-div {
     margin-left: 10px;
     margin-top: 10px;
 }
 
-.Input {
+.InputName-div {
     margin-left: 10px;
     margin-top: 15px;
     margin-bottom: 15px;

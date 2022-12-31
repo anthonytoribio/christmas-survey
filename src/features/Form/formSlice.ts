@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 type SliceState = {name: string, isEnglish: boolean, nextClicked: boolean};
 const initialState: SliceState = {
     name: "",
-    isEnglish: false,
+    isEnglish: true,
     nextClicked: false
 };
 

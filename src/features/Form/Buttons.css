@@ -1,0 +1,32 @@
+.Button-div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Language-div {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.Next-Back-div {
+    margin-left: 10px;
+}
+
+.Language-button {
+    text-align: center;
+    padding: 10px;
+    font-size: calc(3px + 2vmin);
+    background-color: #077eed;
+    color: white;
+    font-weight: 600;
+}
+
+.Next-back-button {
+    text-align: center;
+    padding: 10px;
+    background-color: #077eed;
+    color: white;
+    font-weight: 600;
+    font-size: calc(3px + 2vmin);
+}

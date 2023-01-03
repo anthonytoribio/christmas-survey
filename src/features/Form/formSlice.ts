@@ -1,10 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-type SliceState = {name: string, isEnglish: boolean, nextClicked: boolean};
+type SliceState = {
+    name: string, 
+    isEnglish: boolean, 
+    nextClicked: boolean, 
+    firstChoice: string,
+    secondChoice: string,
+    thirdChoice: string
+};
+
 const initialState: SliceState = {
     name: "",
     isEnglish: true,
-    nextClicked: false
+    nextClicked: false,
+    firstChoice: "",
+    secondChoice: "",
+    thirdChoice: ""
 };
 
 // With the createSlice method we can use a state as if we were mutating it 
@@ -23,9 +34,18 @@ const formSlice = createSlice({
         },
         nextClicked(state) {
             state.nextClicked = !state.nextClicked
+        },
+        firstChoiceClicked(state, action) {
+            state.firstChoice = action.payload
+        },
+        secondChoiceClicked(state, action) {
+            state.secondChoice = action.payload
+        },
+        thirdChoiceClicked(state, action) {
+            state.thirdChoice = action.payload
         }
     },
 })
 
-export const {nameEntered, languageChanged, nextClicked} = formSlice.actions;
+export const {nameEntered, languageChanged, nextClicked, firstChoiceClicked, secondChoiceClicked, thirdChoiceClicked} = formSlice.actions;
 export default formSlice.reducer;
